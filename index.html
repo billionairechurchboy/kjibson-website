@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="K.JIBSON — Study travel agency for Germany, Poland, Austria, Ukraine, and Serbia. Programs, enrollment support, and cultural immersion abroad." />
+  <title>K.JIBSON® | Study Travel Agency</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="motion.css" />
+  <script>
+    if ("scrollRestoration" in history) history.scrollRestoration = "manual";
+    if (location.hash) history.replaceState(null, "", location.pathname + location.search);
+    window.scrollTo(0, 0);
+    document.documentElement.scrollTop = 0;
+  </script>
+</head>
+<body>
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="#hero" class="logo">K.JIBSON<span class="logo-reg">®</span></a>
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#destinations">Destinations</a></li>
+        <li><a href="#programs">Programs</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li>
+          <a href="https://www.instagram.com/k.jibson_/" class="btn btn-sm" target="_blank" rel="noopener noreferrer">Follow us</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Scene 1: Hero — banner background + motion blends -->
+    <section class="scene scene-hero hero" id="hero" data-scene="hero">
+      <div class="scene-stage" aria-hidden="true">
+        <div class="layer layer-bg" data-parallax="0.35" data-parallax-scale="1.08">
+          <div
+            class="layer-media layer-media--kenburns"
+            style="background-image: url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=1920&q=80')"
+          ></div>
+        </div>
+        <div class="layer layer-mid" data-parallax="0.18">
+          <div
+            class="layer-media layer-media--pan-left"
+            style="background-image: url('https://images.unsplash.com/photo-1541339907198-e08756dedf3f?w=1920&q=80'); opacity: 0.35; mix-blend-mode: luminosity;"
+          ></div>
+        </div>
+        <div class="scene-orb scene-orb--1"></div>
+        <div class="scene-orb scene-orb--2"></div>
+        <div class="layer layer-mist"></div>
+        <div class="layer layer-brand-gradient"></div>
+      </div>
+      <div class="hero-content container scene-content">
+        <p class="hero-eyebrow">Study Travel Agency</p>
+        <h1>Study abroad with confidence across Europe</h1>
+        <p class="hero-lead">K.JIBSON connects students with universities, language programs, and cultural immersion in Germany, Poland, Austria, Ukraine, and Serbia — from application to arrival.</p>
+        <div class="hero-actions">
+          <a href="#destinations" class="btn btn-primary">View study destinations</a>
+          <a href="https://www.instagram.com/k.jibson_/" class="btn btn-outline" target="_blank" rel="noopener noreferrer">@k.jibson_</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat">
+            <span class="stat-num">5</span>
+            <span class="stat-label">Study countries</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num">1K+</span>
+            <span class="stat-label">Students supported</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num">24/7</span>
+            <span class="stat-label">Program support</span>
+          </div>
+        </div>
+      </div>
+      <div class="scene-bridge scene-bridge--bottom" style="--bridge-color: #f8fafc"></div>
+    </section>
+
+    <!-- Scene 2: About — depth stack with bg + cutout foreground -->
+    <section class="scene about section" id="about" data-scene="about">
+      <div class="scene-bridge scene-bridge--top" style="--bridge-color: #f8fafc"></div>
+      <div class="container about-grid">
+        <div class="about-visual reveal reveal--tilt" data-tilt>
+          <div class="depth-stack">
+            <div class="depth-stack__bg" data-parallax="0.06">
+              <div
+                class="layer-media layer-media--kenburns-alt"
+                style="background-image: url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=900&q=80')"
+              ></div>
+            </div>
+            <div class="depth-stack__fg" data-parallax="-0.1">
+              <img
+                class="cutout-subject cutout-subject--soft"
+                src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=500&q=80"
+                alt="Student portrait"
+                width="400"
+                height="500"
+                loading="lazy"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="about-text reveal">
+          <span class="section-tag">About us</span>
+          <h2>Study abroad, planned for you</h2>
+          <p>At K.JIBSON, we specialize in educational travel — not vacations. We partner with schools, universities, and language institutes so you can study in Germany, Poland, Austria, Ukraine, or Serbia with clear academic outcomes.</p>
+          <p>From enrollment and housing to cultural orientation, our team handles the logistics so you can focus on learning. Follow us on Instagram for campus life, student stories, and program updates.</p>
+          <ul class="about-features reveal-stagger">
+            <li style="--i: 0">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5L2 15l10 5 10-5"/></svg>
+              <span>University partnerships</span>
+            </li>
+            <li style="--i: 1">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M16 13H8M16 17H8M10 9H8"/></svg>
+              <span>Visa &amp; enrollment support</span>
+            </li>
+            <li style="--i: 2">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="M9 22V12h6v10"/></svg>
+              <span>Housing &amp; host families</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Motion blend strip between About → Destinations -->
+    <div class="motion-strip scene" data-scene="strip" aria-hidden="true">
+      <div class="motion-strip__overlay"></div>
+      <div class="motion-strip__track">
+        <div class="motion-strip__slide"><div class="layer-media" style="background-image: url('https://images.unsplash.com/photo-1560968794-2c7c41e45262?w=700&q=80')"></div></div>
+        <div class="motion-strip__slide"><div class="layer-media" style="background-image: url('https://images.unsplash.com/photo-1514539077938-4603b3ba4e0e?w=700&q=80')"></div></div>
+        <div class="motion-strip__slide"><div class="layer-media" style="background-image: url('https://images.unsplash.com/photo-1516550894835-156b7be91b2b?w=700&q=80')"></div></div>
+        <div class="motion-strip__slide"><div class="layer-media" style="background-image: url('https://images.unsplash.com/photo-1565485276138-599f2f85b04a?w=700&q=80')"></div></div>
+        <div class="motion-strip__slide"><div class="layer-media" style="background-image: url('https://images.unsplash.com/photo-1599946348170-91dcca99a2bf?w=700&q=80')"></div></div>
+        <div class="motion-strip__slide"><div class="layer-media" style="background-image: url('https://images.unsplash.com/photo-1560968794-2c7c41e45262?w=700&q=80')"></div></div>
+        <div class="motion-strip__slide"><div class="layer-media" style="background-image: url('https://images.unsplash.com/photo-1514539077938-4603b3ba4e0e?w=700&q=80')"></div></div>
+        <div class="motion-strip__slide"><div class="layer-media" style="background-image: url('https://images.unsplash.com/photo-1516550894835-156b7be91b2b?w=700&q=80')"></div></div>
+      </div>
+      <div class="section-divider">
+        <div class="section-divider__curve" style="--divider-fill: #fff"></div>
+      </div>
+    </div>
+
+    <!-- Scene 3: Destinations — layered cards with pan/zoom depth -->
+    <section class="scene destinations section" id="destinations" data-scene="destinations">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Study destinations</span>
+          <h2>Where you can learn with us</h2>
+          <p>Five countries. Language schools, universities, and cultural immersion — choose your program and we handle the rest.</p>
+        </div>
+        <div class="destinations-grid destinations-grid--five">
+          <article class="destination-card destination-card--large reveal reveal--scale" data-tilt>
+            <div class="card-depth">
+              <div class="card-depth__bg destination-img--germany" data-parallax="0.04"></div>
+              <div class="card-depth__fg destination-img--germany"></div>
+            </div>
+            <div class="destination-overlay">
+              <span class="destination-region">Central Europe</span>
+              <h3>Germany</h3>
+              <p>Universities, German language programs, and internships in Berlin, Munich, and beyond.</p>
+            </div>
+          </article>
+          <article class="destination-card reveal reveal--scale" style="--i: 1" data-tilt>
+            <div class="card-depth">
+              <div class="card-depth__bg destination-img--poland" data-parallax="0.05"></div>
+              <div class="card-depth__fg destination-img--poland"></div>
+            </div>
+            <div class="destination-overlay">
+              <span class="destination-region">Central Europe</span>
+              <h3>Poland</h3>
+              <p>Affordable degrees, Polish courses, and vibrant student cities like Kraków and Warsaw.</p>
+            </div>
+          </article>
+          <article class="destination-card reveal reveal--scale" style="--i: 2" data-tilt>
+            <div class="card-depth">
+              <div class="card-depth__bg destination-img--austria" data-parallax="0.05"></div>
+              <div class="card-depth__fg destination-img--austria"></div>
+            </div>
+            <div class="destination-overlay">
+              <span class="destination-region">Central Europe</span>
+              <h3>Austria</h3>
+              <p>German immersion, arts &amp; sciences programs, and study life in Vienna and Salzburg.</p>
+            </div>
+          </article>
+          <article class="destination-card reveal reveal--scale" style="--i: 3" data-tilt>
+            <div class="card-depth">
+              <div class="card-depth__bg destination-img--ukraine" data-parallax="0.05"></div>
+              <div class="card-depth__fg destination-img--ukraine"></div>
+            </div>
+            <div class="destination-overlay">
+              <span class="destination-region">Eastern Europe</span>
+              <h3>Ukraine</h3>
+              <p>Medical &amp; technical studies, Ukrainian language, and rich cultural heritage.</p>
+            </div>
+          </article>
+          <article class="destination-card reveal reveal--scale" style="--i: 4" data-tilt>
+            <div class="card-depth">
+              <div class="card-depth__bg destination-img--serbia" data-parallax="0.05"></div>
+              <div class="card-depth__fg destination-img--serbia"></div>
+            </div>
+            <div class="destination-overlay">
+              <span class="destination-region">Balkans</span>
+              <h3>Serbia</h3>
+              <p>Serbian language, Balkan studies, and welcoming student communities in Belgrade.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+      <div class="scene-bridge scene-bridge--bottom" style="--bridge-color: rgba(1, 70, 226, 0.08)"></div>
+    </section>
+
+    <!-- Scene 4: Programs -->
+    <section class="scene experiences section" id="programs" data-scene="programs">
+      <div class="scene-bridge scene-bridge--top" style="--bridge-color: rgba(1, 70, 226, 0.08)"></div>
+      <div class="container">
+        <div class="section-header section-header--center reveal">
+          <span class="section-tag">Programs</span>
+          <h2>How we help you study abroad</h2>
+        </div>
+        <div class="experiences-grid reveal-stagger">
+          <div class="experience-card reveal" style="--i: 0" data-parallax="0.03">
+            <div class="experience-icon">01</div>
+            <h3>Language immersion</h3>
+            <p>Intensive German, Polish, Ukrainian, or Serbian courses with certified schools and homestay options.</p>
+          </div>
+          <div class="experience-card reveal" style="--i: 1" data-parallax="0.05">
+            <div class="experience-icon">02</div>
+            <h3>University pathways</h3>
+            <p>Bachelor’s and master’s placements, foundation years, and application support at partner institutions.</p>
+          </div>
+          <div class="experience-card reveal" style="--i: 2" data-parallax="0.07">
+            <div class="experience-icon">03</div>
+            <h3>Study tours &amp; exchanges</h3>
+            <p>Short-term academic trips for schools and groups — campus visits, cultural modules, and guided orientation.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Scene 5: Instagram — parallax grid with masked tiles -->
+    <section class="scene instagram section" data-scene="instagram">
+      <div class="section-divider">
+        <div class="section-divider__curve" style="--divider-fill: #fff"></div>
+      </div>
+      <div class="container instagram-inner">
+        <div class="instagram-text reveal">
+          <span class="section-tag">Follow along</span>
+          <h2>Student life, on and off campus</h2>
+          <p>Program updates, campus snapshots, and study-abroad tips on Instagram.</p>
+          <a href="https://www.instagram.com/k.jibson_/" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+            @k.jibson_
+          </a>
+        </div>
+        <div class="instagram-grid">
+          <div class="ig-tile reveal" style="--i: 0; --pan-x: -4%; --pan-y: -3%" data-tilt>
+            <div class="ig-tile-inner ig-tile-1"></div>
+          </div>
+          <div class="ig-tile reveal" style="--i: 1; --pan-x: 3%; --pan-y: -5%" data-tilt>
+            <div class="ig-tile-inner ig-tile-2"></div>
+          </div>
+          <div class="ig-tile reveal" style="--i: 2; --pan-x: -2%; --pan-y: 4%" data-tilt>
+            <div class="ig-tile-inner ig-tile-3"></div>
+          </div>
+          <div class="ig-tile reveal" style="--i: 3; --pan-x: 5%; --pan-y: 2%" data-tilt>
+            <div class="ig-tile-inner ig-tile-4"></div>
+          </div>
+        </div>
+      </div>
+      <div class="scene-bridge scene-bridge--bottom" style="--bridge-color: #fff"></div>
+    </section>
+
+    <!-- Scene 6: Contact -->
+    <section class="scene contact section" id="contact" data-scene="contact">
+      <div class="scene-bridge scene-bridge--top" style="--bridge-color: #fff"></div>
+      <div class="container contact-grid">
+        <div class="contact-info reveal">
+          <span class="section-tag">Contact</span>
+          <h2>Start your study abroad journey</h2>
+          <p>Tell us your academic goals and preferred country — we will match you with programs, timelines, and costs.</p>
+          <div class="contact-links">
+            <a href="https://www.instagram.com/k.jibson_/" target="_blank" rel="noopener noreferrer">Instagram — @k.jibson_</a>
+            <a href="mailto:hello@kjibson.com">hello@kjibson.com</a>
+          </div>
+        </div>
+        <form class="contact-form reveal reveal--scale" action="#" method="post" data-tilt>
+          <div class="form-row">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required placeholder="Your name" />
+          </div>
+          <div class="form-row">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required placeholder="you@example.com" />
+          </div>
+          <div class="form-row">
+            <label for="destination">Preferred country</label>
+            <input type="text" id="destination" name="destination" placeholder="Germany, Poland, Austria, Ukraine, or Serbia" />
+          </div>
+          <div class="form-row">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" placeholder="Program type, start date, language level, degree interest…"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">Send inquiry</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <a href="#hero" class="logo">K.JIBSON<span class="logo-reg">®</span></a>
+      <p class="footer-copy">© <span id="year"></span> K.JIBSON. All rights reserved.</p>
+      <div class="footer-social">
+        <a href="https://www.instagram.com/k.jibson_/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">Instagram</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
