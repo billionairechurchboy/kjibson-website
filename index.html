@@ -3,8 +3,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="K.JIBSON — Study travel agency for Germany, Poland, Austria, Ukraine, and Serbia. Programs, enrollment support, and cultural immersion abroad." />
-  <title>K.JIBSON® | Study Travel Agency</title>
+  <meta name="description" content="K.JIBSON — University admission and visa processing for students studying in Serbia. End-to-end application support from documents to arrival." />
+  <title>K.JIBSON® | Admission &amp; Visa Agency</title>
+  <link rel="icon" type="image/png" href="favicon.png" />
+  <link rel="apple-touch-icon" href="favicon.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet" />
@@ -20,14 +22,16 @@
 <body>
   <header class="header" id="header">
     <nav class="nav container">
-      <a href="#hero" class="logo">K.JIBSON<span class="logo-reg">®</span></a>
+      <a href="#hero" class="logo">
+        <img src="assets/logo 2.png" alt="K. Jibson Travels" width="168" height="52" />
+      </a>
       <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
       <ul class="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#destinations">Destinations</a></li>
-        <li><a href="#programs">Programs</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#checklist">Checklist</a></li>
+        <li><a href="#stories">Stories</a></li>
         <li><a href="#contact">Contact</a></li>
         <li>
           <a href="https://www.instagram.com/k.jibson_/" class="btn btn-sm" target="_blank" rel="noopener noreferrer">Follow us</a>
@@ -37,19 +41,13 @@
   </header>
 
   <main>
-    <!-- Scene 1: Hero — banner background + motion blends -->
+    <!-- Scene 1: Hero -->
     <section class="scene scene-hero hero" id="hero" data-scene="hero">
       <div class="scene-stage" aria-hidden="true">
         <div class="layer layer-bg" data-parallax="0.35" data-parallax-scale="1.08">
           <div
-            class="layer-media layer-media--kenburns"
-            style="background-image: url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=1920&q=80')"
-          ></div>
-        </div>
-        <div class="layer layer-mid" data-parallax="0.18">
-          <div
-            class="layer-media layer-media--pan-left"
-            style="background-image: url('https://images.unsplash.com/photo-1541339907198-e08756dedf3f?w=1920&q=80'); opacity: 0.35; mix-blend-mode: luminosity;"
+            class="layer-media layer-media--kenburns hero-banner-img"
+            style="background-image: url('assets/hero-banner.png')"
           ></div>
         </div>
         <div class="scene-orb scene-orb--1"></div>
@@ -58,17 +56,17 @@
         <div class="layer layer-brand-gradient"></div>
       </div>
       <div class="hero-content container scene-content">
-        <p class="hero-eyebrow">Study Travel Agency</p>
-        <h1>Study abroad with confidence across Europe</h1>
-        <p class="hero-lead">K.JIBSON connects students with universities, language programs, and cultural immersion in Germany, Poland, Austria, Ukraine, and Serbia — from application to arrival.</p>
+        <p class="hero-eyebrow">Admission &amp; Visa Agency</p>
+        <h1>University admission in Serbia, handled for you</h1>
+        <p class="hero-lead">K.JIBSON manages your university application and visa process in Serbia — from document preparation and submission through to your admission decision.</p>
         <div class="hero-actions">
-          <a href="#destinations" class="btn btn-primary">View study destinations</a>
+          <a href="#checklist" class="btn btn-primary">View admission checklist</a>
           <a href="https://www.instagram.com/k.jibson_/" class="btn btn-outline" target="_blank" rel="noopener noreferrer">@k.jibson_</a>
         </div>
         <div class="hero-stats">
           <div class="stat">
-            <span class="stat-num">5</span>
-            <span class="stat-label">Study countries</span>
+            <span class="stat-num">1</span>
+            <span class="stat-label">Study destination</span>
           </div>
           <div class="stat">
             <span class="stat-num">1K+</span>
@@ -76,176 +74,215 @@
           </div>
           <div class="stat">
             <span class="stat-num">24/7</span>
-            <span class="stat-label">Program support</span>
+            <span class="stat-label">Case support</span>
           </div>
         </div>
       </div>
       <div class="scene-bridge scene-bridge--bottom" style="--bridge-color: #f8fafc"></div>
     </section>
 
-    <!-- Scene 2: About — depth stack with bg + cutout foreground -->
-    <section class="scene about section" id="about" data-scene="about">
-      <div class="scene-bridge scene-bridge--top" style="--bridge-color: #f8fafc"></div>
-      <div class="container about-grid">
-        <div class="about-visual reveal reveal--tilt" data-tilt>
-          <div class="depth-stack">
-            <div class="depth-stack__bg" data-parallax="0.06">
-              <div
-                class="layer-media layer-media--kenburns-alt"
-                style="background-image: url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=900&q=80')"
-              ></div>
-            </div>
-            <div class="depth-stack__fg" data-parallax="-0.1">
-              <img
-                class="cutout-subject cutout-subject--soft"
-                src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=500&q=80"
-                alt="Student portrait"
-                width="400"
-                height="500"
-                loading="lazy"
-              />
-            </div>
-          </div>
-        </div>
-        <div class="about-text reveal">
-          <span class="section-tag">About us</span>
-          <h2>Study abroad, planned for you</h2>
-          <p>At K.JIBSON, we specialize in educational travel — not vacations. We partner with schools, universities, and language institutes so you can study in Germany, Poland, Austria, Ukraine, or Serbia with clear academic outcomes.</p>
-          <p>From enrollment and housing to cultural orientation, our team handles the logistics so you can focus on learning. Follow us on Instagram for campus life, student stories, and program updates.</p>
-          <ul class="about-features reveal-stagger">
-            <li style="--i: 0">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5L2 15l10 5 10-5"/></svg>
-              <span>University partnerships</span>
-            </li>
-            <li style="--i: 1">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M16 13H8M16 17H8M10 9H8"/></svg>
-              <span>Visa &amp; enrollment support</span>
-            </li>
-            <li style="--i: 2">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="M9 22V12h6v10"/></svg>
-              <span>Housing &amp; host families</span>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <!-- Motion blend strip between About → Destinations -->
-    <div class="motion-strip scene" data-scene="strip" aria-hidden="true">
-      <div class="motion-strip__overlay"></div>
-      <div class="motion-strip__track">
-        <div class="motion-strip__slide"><div class="layer-media" style="background-image: url('https://images.unsplash.com/photo-1560968794-2c7c41e45262?w=700&q=80')"></div></div>
-        <div class="motion-strip__slide"><div class="layer-media" style="background-image: url('https://images.unsplash.com/photo-1514539077938-4603b3ba4e0e?w=700&q=80')"></div></div>
-        <div class="motion-strip__slide"><div class="layer-media" style="background-image: url('https://images.unsplash.com/photo-1516550894835-156b7be91b2b?w=700&q=80')"></div></div>
-        <div class="motion-strip__slide"><div class="layer-media" style="background-image: url('https://images.unsplash.com/photo-1565485276138-599f2f85b04a?w=700&q=80')"></div></div>
-        <div class="motion-strip__slide"><div class="layer-media" style="background-image: url('https://images.unsplash.com/photo-1599946348170-91dcca99a2bf?w=700&q=80')"></div></div>
-        <div class="motion-strip__slide"><div class="layer-media" style="background-image: url('https://images.unsplash.com/photo-1560968794-2c7c41e45262?w=700&q=80')"></div></div>
-        <div class="motion-strip__slide"><div class="layer-media" style="background-image: url('https://images.unsplash.com/photo-1514539077938-4603b3ba4e0e?w=700&q=80')"></div></div>
-        <div class="motion-strip__slide"><div class="layer-media" style="background-image: url('https://images.unsplash.com/photo-1516550894835-156b7be91b2b?w=700&q=80')"></div></div>
-      </div>
-      <div class="section-divider">
-        <div class="section-divider__curve" style="--divider-fill: #fff"></div>
-      </div>
-    </div>
-
-    <!-- Scene 3: Destinations — layered cards with pan/zoom depth -->
-    <section class="scene destinations section" id="destinations" data-scene="destinations">
-      <div class="container">
-        <div class="section-header reveal">
-          <span class="section-tag">Study destinations</span>
-          <h2>Where you can learn with us</h2>
-          <p>Five countries. Language schools, universities, and cultural immersion — choose your program and we handle the rest.</p>
-        </div>
-        <div class="destinations-grid destinations-grid--five">
-          <article class="destination-card destination-card--large reveal reveal--scale" data-tilt>
-            <div class="card-depth">
-              <div class="card-depth__bg destination-img--germany" data-parallax="0.04"></div>
-              <div class="card-depth__fg destination-img--germany"></div>
-            </div>
-            <div class="destination-overlay">
-              <span class="destination-region">Central Europe</span>
-              <h3>Germany</h3>
-              <p>Universities, German language programs, and internships in Berlin, Munich, and beyond.</p>
-            </div>
-          </article>
-          <article class="destination-card reveal reveal--scale" style="--i: 1" data-tilt>
-            <div class="card-depth">
-              <div class="card-depth__bg destination-img--poland" data-parallax="0.05"></div>
-              <div class="card-depth__fg destination-img--poland"></div>
-            </div>
-            <div class="destination-overlay">
-              <span class="destination-region">Central Europe</span>
-              <h3>Poland</h3>
-              <p>Affordable degrees, Polish courses, and vibrant student cities like Kraków and Warsaw.</p>
-            </div>
-          </article>
-          <article class="destination-card reveal reveal--scale" style="--i: 2" data-tilt>
-            <div class="card-depth">
-              <div class="card-depth__bg destination-img--austria" data-parallax="0.05"></div>
-              <div class="card-depth__fg destination-img--austria"></div>
-            </div>
-            <div class="destination-overlay">
-              <span class="destination-region">Central Europe</span>
-              <h3>Austria</h3>
-              <p>German immersion, arts &amp; sciences programs, and study life in Vienna and Salzburg.</p>
-            </div>
-          </article>
-          <article class="destination-card reveal reveal--scale" style="--i: 3" data-tilt>
-            <div class="card-depth">
-              <div class="card-depth__bg destination-img--ukraine" data-parallax="0.05"></div>
-              <div class="card-depth__fg destination-img--ukraine"></div>
-            </div>
-            <div class="destination-overlay">
-              <span class="destination-region">Eastern Europe</span>
-              <h3>Ukraine</h3>
-              <p>Medical &amp; technical studies, Ukrainian language, and rich cultural heritage.</p>
-            </div>
-          </article>
-          <article class="destination-card reveal reveal--scale" style="--i: 4" data-tilt>
-            <div class="card-depth">
-              <div class="card-depth__bg destination-img--serbia" data-parallax="0.05"></div>
-              <div class="card-depth__fg destination-img--serbia"></div>
-            </div>
-            <div class="destination-overlay">
-              <span class="destination-region">Balkans</span>
-              <h3>Serbia</h3>
-              <p>Serbian language, Balkan studies, and welcoming student communities in Belgrade.</p>
-            </div>
-          </article>
-        </div>
-      </div>
-      <div class="scene-bridge scene-bridge--bottom" style="--bridge-color: rgba(1, 70, 226, 0.08)"></div>
-    </section>
-
-    <!-- Scene 4: Programs -->
-    <section class="scene experiences section" id="programs" data-scene="programs">
-      <div class="scene-bridge scene-bridge--top" style="--bridge-color: rgba(1, 70, 226, 0.08)"></div>
+    <!-- Scene 2: Services -->
+    <section class="scene experiences section" id="services" data-scene="services">
       <div class="container">
         <div class="section-header section-header--center reveal">
-          <span class="section-tag">Programs</span>
-          <h2>How we help you study abroad</h2>
+          <span class="section-tag">Our services</span>
+          <h2>What we handle for you</h2>
+          <p>Admission, visa processing, accommodation, and flight tickets — everything you need to study in Serbia.</p>
         </div>
-        <div class="experiences-grid reveal-stagger">
-          <div class="experience-card reveal" style="--i: 0" data-parallax="0.03">
-            <div class="experience-icon">01</div>
-            <h3>Language immersion</h3>
-            <p>Intensive German, Polish, Ukrainian, or Serbian courses with certified schools and homestay options.</p>
-          </div>
-          <div class="experience-card reveal" style="--i: 1" data-parallax="0.05">
-            <div class="experience-icon">02</div>
-            <h3>University pathways</h3>
-            <p>Bachelor’s and master’s placements, foundation years, and application support at partner institutions.</p>
-          </div>
-          <div class="experience-card reveal" style="--i: 2" data-parallax="0.07">
-            <div class="experience-icon">03</div>
-            <h3>Study tours &amp; exchanges</h3>
-            <p>Short-term academic trips for schools and groups — campus visits, cultural modules, and guided orientation.</p>
-          </div>
+        <div class="services-grid reveal-stagger">
+          <article class="service-card reveal" style="--i: 0">
+            <span class="service-card__num">01</span>
+            <h3>University admission</h3>
+            <p>We guide you from first inquiry to enrollment letter. That includes choosing the right Serbian university, preparing your application form, collecting transcripts and recommendation letters, and submitting everything on time.</p>
+            <p>Our team checks every document before it goes to admissions so rejections from missing or incorrect paperwork are avoided.</p>
+          </article>
+          <article class="service-card reveal" style="--i: 1">
+            <span class="service-card__num">02</span>
+            <h3>Visa processing</h3>
+            <p>Once you are admitted, we handle the student visa process — compiling embassy requirements, reviewing your financial and academic documents, and preparing you for your appointment.</p>
+            <p>We stay in contact with you through approval so you know exactly when you can travel to Serbia.</p>
+          </article>
+          <article class="service-card reveal" style="--i: 2">
+            <span class="service-card__num">03</span>
+            <h3>Accommodation</h3>
+            <p>We arrange student housing or dormitory placement close to your campus in Belgrade or other university cities. Options are matched to your budget, program length, and preferred living setup.</p>
+            <p>You arrive with a confirmed place to stay instead of searching on your own after landing.</p>
+          </article>
+          <article class="service-card reveal" style="--i: 3">
+            <span class="service-card__num">04</span>
+            <h3>Flight tickets</h3>
+            <p>We book your return flights to Serbia with dates aligned to your program start and visa approval. That includes coordinating layovers, baggage allowances, and any schedule changes if your intake date shifts.</p>
+            <p>One less thing to organise before you begin your studies abroad.</p>
+          </article>
+        </div>
+      </div>
+      <div class="scene-bridge scene-bridge--bottom" style="--bridge-color: #fff"></div>
+    </section>
+
+    <!-- Scene 4: Admission Checklist -->
+    <section class="scene checklist section" id="checklist" data-scene="checklist">
+      <div class="scene-bridge scene-bridge--top" style="--bridge-color: #fff"></div>
+      <div class="container checklist-wrap">
+        <div class="checklist-intro reveal checklist-intro--center">
+          <span class="section-tag">Admission checklist</span>
+          <h2>Every step of your application</h2>
+          <p>We manage the full admission pipeline for Serbian universities. Here is the process we guide you through — from your first form to the final decision.</p>
+        </div>
+        <ol class="checklist-items reveal-stagger">
+          <li class="checklist-item reveal" style="--i: 0">
+            <div class="checklist-item__body">
+              <span class="checklist-item__step">1.</span>
+              <div>
+                <h3>Application form submission</h3>
+                <p>We help you complete and submit your university application with accurate personal and academic details.</p>
+              </div>
+            </div>
+            <div class="checklist-item__icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
+            </div>
+          </li>
+          <li class="checklist-item reveal" style="--i: 1">
+            <div class="checklist-item__body">
+              <span class="checklist-item__step">2.</span>
+              <div>
+                <h3>Transcript upload</h3>
+                <p>Official transcripts are collected, verified, and uploaded in the format each university requires.</p>
+              </div>
+            </div>
+            <div class="checklist-item__icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 19V5M5 12l7-7 7 7"/><path d="M5 19h14"/></svg>
+            </div>
+          </li>
+          <li class="checklist-item reveal" style="--i: 2">
+            <div class="checklist-item__body">
+              <span class="checklist-item__step">3.</span>
+              <div>
+                <h3>Recommendation letter submission</h3>
+                <p>We coordinate with your referees and ensure recommendation letters reach the admissions office on time.</p>
+              </div>
+            </div>
+            <div class="checklist-item__icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 7l-10 7L2 7"/></svg>
+            </div>
+          </li>
+          <li class="checklist-item reveal" style="--i: 3">
+            <div class="checklist-item__body">
+              <span class="checklist-item__step">4.</span>
+              <div>
+                <h3>Application fee payment</h3>
+                <p>Application fees are processed correctly and receipts are filed as proof of payment for your file.</p>
+              </div>
+            </div>
+            <div class="checklist-item__icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg>
+            </div>
+          </li>
+          <li class="checklist-item reveal" style="--i: 4">
+            <div class="checklist-item__body">
+              <span class="checklist-item__step">5.</span>
+              <div>
+                <h3>Admission decision notification</h3>
+                <p>Once a decision is issued, we notify you immediately and begin visa processing for your study permit.</p>
+              </div>
+            </div>
+            <div class="checklist-item__icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8A6 6 0 1 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>
+            </div>
+          </li>
+        </ol>
+        <div class="checklist-actions reveal">
+          <a href="assets/serbia-quotation.pdf" class="btn btn-primary" download>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            Download our quotation
+          </a>
         </div>
       </div>
     </section>
 
-    <!-- Scene 5: Instagram — parallax grid with masked tiles -->
+    <!-- Scene 5: Success Stories -->
+    <section class="scene stories section" id="stories" data-scene="stories">
+      <div class="container">
+        <div class="section-header section-header--center reveal">
+          <span class="section-tag">Success stories</span>
+          <h2>Hear from our students</h2>
+          <p>Real experiences from students who completed their admission and visa process with K.JIBSON.</p>
+        </div>
+        <div class="stories-grid reveal-stagger">
+          <article class="story-card reveal" style="--i: 0">
+            <div class="story-video">
+              <video class="story-video__player" controls playsinline preload="metadata" src="assets/videos/story-1.mp4"></video>
+            </div>
+            <div class="story-card__meta">
+              <div class="story-stars" aria-label="5 out of 5 stars">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              </div>
+              <p class="story-quote">“K.JIBSON handled my entire admission — I received my letter within weeks.”</p>
+              <span class="story-name">Student testimonial · Video 1</span>
+            </div>
+          </article>
+          <article class="story-card reveal" style="--i: 1">
+            <div class="story-video">
+              <video class="story-video__player" controls playsinline preload="metadata" src="assets/videos/story-2.mp4"></video>
+            </div>
+            <div class="story-card__meta">
+              <div class="story-stars" aria-label="5 out of 5 stars">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              </div>
+              <p class="story-quote">“The visa process was smooth — they knew exactly what documents I needed.”</p>
+              <span class="story-name">Student testimonial · Video 2</span>
+            </div>
+          </article>
+          <article class="story-card reveal" style="--i: 2">
+            <div class="story-video">
+              <video class="story-video__player" controls playsinline preload="metadata" src="assets/videos/story-3.mp4"></video>
+            </div>
+            <div class="story-card__meta">
+              <div class="story-stars" aria-label="5 out of 5 stars">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              </div>
+              <p class="story-quote">“From application to accommodation, everything was taken care of.”</p>
+              <span class="story-name">Student testimonial · Video 3</span>
+            </div>
+          </article>
+          <article class="story-card reveal" style="--i: 3">
+            <div class="story-video">
+              <video class="story-video__player" controls playsinline preload="metadata" src="assets/videos/story-4.mp4"></video>
+            </div>
+            <div class="story-card__meta">
+              <div class="story-stars" aria-label="5 out of 5 stars">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              </div>
+              <p class="story-quote">“I recommend K.JIBSON to anyone applying to study in Serbia.”</p>
+              <span class="story-name">Student testimonial · Video 4</span>
+            </div>
+          </article>
+        </div>
+        <div class="stories-actions reveal">
+          <a href="https://www.instagram.com/k.jibson_/" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
+            View more on Instagram
+          </a>
+        </div>
+      </div>
+      <div class="scene-bridge scene-bridge--bottom" style="--bridge-color: #fff"></div>
+    </section>
+
+    <!-- Scene 6: Instagram -->
     <section class="scene instagram section" data-scene="instagram">
       <div class="section-divider">
         <div class="section-divider__curve" style="--divider-fill: #fff"></div>
@@ -253,8 +290,8 @@
       <div class="container instagram-inner">
         <div class="instagram-text reveal">
           <span class="section-tag">Follow along</span>
-          <h2>Student life, on and off campus</h2>
-          <p>Program updates, campus snapshots, and study-abroad tips on Instagram.</p>
+          <h2>Admission updates &amp; student stories</h2>
+          <p>Application tips, visa guidance, and success stories from students studying in Serbia.</p>
           <a href="https://www.instagram.com/k.jibson_/" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
             @k.jibson_
@@ -278,14 +315,14 @@
       <div class="scene-bridge scene-bridge--bottom" style="--bridge-color: #fff"></div>
     </section>
 
-    <!-- Scene 6: Contact -->
+    <!-- Scene 7: Contact -->
     <section class="scene contact section" id="contact" data-scene="contact">
       <div class="scene-bridge scene-bridge--top" style="--bridge-color: #fff"></div>
       <div class="container contact-grid">
         <div class="contact-info reveal">
           <span class="section-tag">Contact</span>
-          <h2>Start your study abroad journey</h2>
-          <p>Tell us your academic goals and preferred country — we will match you with programs, timelines, and costs.</p>
+          <h2>Start your admission process</h2>
+          <p>Tell us your degree interest and timeline — we will outline the admission steps, required documents, and visa process for Serbia.</p>
           <div class="contact-links">
             <a href="https://www.instagram.com/k.jibson_/" target="_blank" rel="noopener noreferrer">Instagram — @k.jibson_</a>
             <a href="mailto:hello@kjibson.com">hello@kjibson.com</a>
@@ -302,11 +339,11 @@
           </div>
           <div class="form-row">
             <label for="destination">Preferred country</label>
-            <input type="text" id="destination" name="destination" placeholder="Germany, Poland, Austria, Ukraine, or Serbia" />
+            <input type="text" id="destination" name="destination" placeholder="Serbia" />
           </div>
           <div class="form-row">
             <label for="message">Message</label>
-            <textarea id="message" name="message" rows="4" placeholder="Program type, start date, language level, degree interest…"></textarea>
+            <textarea id="message" name="message" rows="4" placeholder="Degree program, start date, current education level…"></textarea>
           </div>
           <button type="submit" class="btn btn-primary btn-full">Send inquiry</button>
         </form>
@@ -316,7 +353,9 @@
 
   <footer class="footer">
     <div class="container footer-inner">
-      <a href="#hero" class="logo">K.JIBSON<span class="logo-reg">®</span></a>
+      <a href="#hero" class="logo">
+        <img src="assets/logo 2.png" alt="K. Jibson Travels" width="168" height="52" />
+      </a>
       <p class="footer-copy">© <span id="year"></span> K.JIBSON. All rights reserved.</p>
       <div class="footer-social">
         <a href="https://www.instagram.com/k.jibson_/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">Instagram</a>

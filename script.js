@@ -122,7 +122,7 @@ const revealObserver = new IntersectionObserver(
   { rootMargin: "0px 0px -8% 0px", threshold: 0.12 }
 );
 
-document.querySelectorAll(".reveal, .destination-card, .ig-tile").forEach((el) => {
+document.querySelectorAll(".reveal, .destination-card, .ig-tile, .checklist-item, .story-card, .service-card").forEach((el) => {
   revealObserver.observe(el);
 });
 
