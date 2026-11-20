@@ -22,7 +22,7 @@ Then visit [http://localhost:8080](http://localhost:8080).
 | Hero | Boarding pass with split-flap origin city flying to BEG |
 | Services | Folder tabs (keyboard accessible) with a checklist sheet per service |
 | Process | Steps get rubber-stamped as you scroll; final "Admitted" seal |
-| Stories | 9:16 reels from `assets/videos/story-1..4.mp4`, branded fallback if a file is missing |
+| Stories | 9:16 reels streamed from Cloudinary, branded fallback if a file is missing |
 | Contact | Numbered official-style inquiry form |
 
 Respects `prefers-reduced-motion`.

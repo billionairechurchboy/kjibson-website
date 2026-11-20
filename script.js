@@ -137,11 +137,17 @@ const stepObserver = new IntersectionObserver(
 );
 steps.forEach((s) => stepObserver.observe(s));
 
-/* ─── Reels: graceful fallback when a video file is missing ─── */
-$$(".reel video").forEach((video) => {
-  const markMissing = () => video.closest(".reel").classList.add("is-missing");
+/* ─── Reels: one plays at a time; fallback only on a real load error ─── */
+const reelVideos = $$(".reel video");
+reelVideos.forEach((video) => {
+  const reel = video.closest(".reel");
+  const markMissing = () => reel.classList.add("is-missing");
+  // networkState is briefly NO_SOURCE while loading starts, so rely on errors only.
   video.addEventListener("error", markMissing);
-  if (video.error || video.networkState === HTMLMediaElement.NETWORK_NO_SOURCE) markMissing();
+  if (video.error) markMissing();
+  video.addEventListener("play", () => {
+    reelVideos.forEach((other) => other !== video && other.pause());
+  });
 });
 
 /* ─── Scroll reveal ─── */
