@@ -4,362 +4,395 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="K.JIBSON — University admission and visa processing for students studying in Serbia. End-to-end application support from documents to arrival." />
+  <meta name="theme-color" content="#0146e2" />
   <title>K.JIBSON® | Admission &amp; Visa Agency</title>
   <link rel="icon" type="image/png" href="favicon.png" />
   <link rel="apple-touch-icon" href="favicon.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,300..900;1,62..125,300..900&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
-  <link rel="stylesheet" href="motion.css" />
   <script>
     if ("scrollRestoration" in history) history.scrollRestoration = "manual";
     if (location.hash) history.replaceState(null, "", location.pathname + location.search);
-    window.scrollTo(0, 0);
-    document.documentElement.scrollTop = 0;
+    document.documentElement.classList.add("js");
   </script>
 </head>
 <body>
+  <a class="skip" href="#main">Skip to content</a>
+
   <header class="header" id="header">
-    <nav class="nav container">
-      <a href="#hero" class="logo">
-        <img src="assets/logo 2.png" alt="K. Jibson Travels" width="168" height="52" />
+    <nav class="nav wrap" aria-label="Main">
+      <a href="#top" class="nav__logo" aria-label="K.Jibson Travels — back to top">
+        <img src="assets/logo 2.png" alt="K.Jibson Travels" width="150" height="43" />
       </a>
-      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
-      <ul class="nav-links">
+      <ul class="nav__links" id="nav-links">
         <li><a href="#services">Services</a></li>
-        <li><a href="#checklist">Checklist</a></li>
+        <li><a href="#process">Process</a></li>
         <li><a href="#stories">Stories</a></li>
         <li><a href="#contact">Contact</a></li>
-        <li>
-          <a href="https://www.instagram.com/k.jibson_/" class="btn btn-sm" target="_blank" rel="noopener noreferrer">Follow us</a>
-        </li>
       </ul>
+      <a href="#contact" class="btn btn--ink nav__cta">Start your file <span aria-hidden="true">→</span></a>
+      <button class="nav__toggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">
+        <span></span><span></span>
+      </button>
     </nav>
   </header>
 
-  <main>
-    <!-- Scene 1: Hero -->
-    <section class="scene scene-hero hero" id="hero" data-scene="hero">
-      <div class="scene-stage" aria-hidden="true">
-        <div class="layer layer-bg" data-parallax="0.35" data-parallax-scale="1.08">
-          <div
-            class="layer-media layer-media--kenburns hero-banner-img"
-            style="background-image: url('assets/hero-banner.png')"
-          ></div>
+  <main id="main">
+    <!-- ───────── Hero ───────── -->
+    <section class="hero" id="top">
+      <div class="wrap hero__grid">
+        <div class="hero__copy">
+          <p class="meta rise" style="--d:0">
+            <span class="meta__dot" aria-hidden="true"></span>
+            File Nº KJ-26 &nbsp;/&nbsp; Admission &amp; Visa Agency &nbsp;/&nbsp; Serbia
+          </p>
+          <h1 class="hero__title">
+            <span class="line rise" style="--d:1">Study in Serbia.</span>
+            <span class="line rise hero__title--blue" style="--d:2">We carry the</span>
+            <span class="line rise hero__title--blue" style="--d:3">paperwork.</span>
+          </h1>
+          <p class="hero__lead rise" style="--d:4">
+            K.JIBSON manages your university application and student visa from the first form to the admission decision. Then we sort out your housing and flights too.
+          </p>
+          <div class="hero__actions rise" style="--d:5">
+            <a href="#contact" class="btn btn--blue">Open your application <span aria-hidden="true">→</span></a>
+            <a href="#process" class="btn btn--line">See the 5 steps</a>
+          </div>
+          <dl class="hero__stats rise" style="--d:6">
+            <div><dt>Students supported</dt><dd>1K+</dd></div>
+            <div><dt>Case support</dt><dd>24/7</dd></div>
+            <div><dt>Destination, done properly</dt><dd>01</dd></div>
+          </dl>
         </div>
-        <div class="scene-orb scene-orb--1"></div>
-        <div class="scene-orb scene-orb--2"></div>
-        <div class="layer layer-mist"></div>
-        <div class="layer layer-brand-gradient"></div>
+
+        <div class="hero__visual">
+          <figure class="hero__photo">
+            <img src="assets/hero.jpg" alt="" width="2000" height="1332" fetchpriority="high" />
+          </figure>
+
+          <!-- Boarding pass -->
+          <article class="pass" aria-label="Sample student pass">
+            <div class="pass__main">
+              <header class="pass__head">
+                <span class="pass__brand">K.JIBSON</span>
+                <span class="pass__kind">Student pass</span>
+              </header>
+              <div class="pass__route">
+                <div class="pass__end">
+                  <span class="label">From</span>
+                  <span class="pass__code" data-flip aria-live="polite">LOS</span>
+                  <span class="pass__city" data-flip-city>Lagos</span>
+                </div>
+                <div class="pass__path" aria-hidden="true">
+                  <svg viewBox="0 0 120 24" preserveAspectRatio="none"><path d="M2 20 Q60 -8 118 20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-dasharray="3 4" vector-effect="non-scaling-stroke"/></svg>
+                  <svg class="pass__plane" viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M21 16v-2l-8-5V3.5a1.5 1.5 0 0 0-3 0V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L13 19v-5.5z"/></svg>
+                </div>
+                <div class="pass__end pass__end--to">
+                  <span class="label">To</span>
+                  <span class="pass__code">BEG</span>
+                  <span class="pass__city">Belgrade</span>
+                </div>
+              </div>
+              <dl class="pass__fields">
+                <div><dt class="label">Passenger</dt><dd>You</dd></div>
+                <div><dt class="label">Class</dt><dd>Student</dd></div>
+                <div><dt class="label">Intake</dt><dd>2026/27</dd></div>
+                <div><dt class="label">Status</dt><dd class="pass__status">Admitted</dd></div>
+              </dl>
+            </div>
+            <div class="pass__stub">
+              <span class="label">Boarding</span>
+              <span class="pass__stubtext">Once your visa clears</span>
+              <span class="pass__barcode" aria-hidden="true"></span>
+            </div>
+          </article>
+        </div>
       </div>
-      <div class="hero-content container scene-content">
-        <p class="hero-eyebrow">Admission &amp; Visa Agency</p>
-        <h1>University admission in Serbia, handled for you</h1>
-        <p class="hero-lead">K.JIBSON manages your university application and visa process in Serbia — from document preparation and submission through to your admission decision.</p>
-        <div class="hero-actions">
-          <a href="#checklist" class="btn btn-primary">View admission checklist</a>
-          <a href="https://www.instagram.com/k.jibson_/" class="btn btn-outline" target="_blank" rel="noopener noreferrer">@k.jibson_</a>
-        </div>
-        <div class="hero-stats">
-          <div class="stat">
-            <span class="stat-num">1</span>
-            <span class="stat-label">Study destination</span>
-          </div>
-          <div class="stat">
-            <span class="stat-num">1K+</span>
-            <span class="stat-label">Students supported</span>
-          </div>
-          <div class="stat">
-            <span class="stat-num">24/7</span>
-            <span class="stat-label">Case support</span>
-          </div>
-        </div>
-      </div>
-      <div class="scene-bridge scene-bridge--bottom" style="--bridge-color: #f8fafc"></div>
     </section>
 
-    <!-- Scene 2: Services -->
-    <section class="scene experiences section" id="services" data-scene="services">
-      <div class="container">
-        <div class="section-header section-header--center reveal">
-          <span class="section-tag">Our services</span>
-          <h2>What we handle for you</h2>
-          <p>Admission, visa processing, accommodation, and flight tickets — everything you need to study in Serbia.</p>
-        </div>
-        <div class="services-grid reveal-stagger">
-          <article class="service-card reveal" style="--i: 0">
-            <span class="service-card__num">01</span>
-            <h3>University admission</h3>
-            <p>We guide you from first inquiry to enrollment letter. That includes choosing the right Serbian university, preparing your application form, collecting transcripts and recommendation letters, and submitting everything on time.</p>
-            <p>Our team checks every document before it goes to admissions so rejections from missing or incorrect paperwork are avoided.</p>
-          </article>
-          <article class="service-card reveal" style="--i: 1">
-            <span class="service-card__num">02</span>
-            <h3>Visa processing</h3>
-            <p>Once you are admitted, we handle the student visa process — compiling embassy requirements, reviewing your financial and academic documents, and preparing you for your appointment.</p>
-            <p>We stay in contact with you through approval so you know exactly when you can travel to Serbia.</p>
-          </article>
-          <article class="service-card reveal" style="--i: 2">
-            <span class="service-card__num">03</span>
-            <h3>Accommodation</h3>
-            <p>We arrange student housing or dormitory placement close to your campus in Belgrade or other university cities. Options are matched to your budget, program length, and preferred living setup.</p>
-            <p>You arrive with a confirmed place to stay instead of searching on your own after landing.</p>
-          </article>
-          <article class="service-card reveal" style="--i: 3">
-            <span class="service-card__num">04</span>
-            <h3>Flight tickets</h3>
-            <p>We book your return flights to Serbia with dates aligned to your program start and visa approval. That includes coordinating layovers, baggage allowances, and any schedule changes if your intake date shifts.</p>
-            <p>One less thing to organise before you begin your studies abroad.</p>
-          </article>
+    <!-- ───────── Ticker ───────── -->
+    <div class="ticker" aria-hidden="true">
+      <div class="ticker__track">
+        <span>University admission</span><i>✦</i><span>Visa processing</span><i>✦</i><span>Accommodation</span><i>✦</i><span>Flight tickets</span><i>✦</i><span>Belgrade</span><i>✦</i><span>Novi Sad</span><i>✦</i><span>Niš</span><i>✦</i><span>Kragujevac</span><i>✦</i>
+        <span>University admission</span><i>✦</i><span>Visa processing</span><i>✦</i><span>Accommodation</span><i>✦</i><span>Flight tickets</span><i>✦</i><span>Belgrade</span><i>✦</i><span>Novi Sad</span><i>✦</i><span>Niš</span><i>✦</i><span>Kragujevac</span><i>✦</i>
+      </div>
+    </div>
+
+    <!-- ───────── Services: folder tabs ───────── -->
+    <section class="section services" id="services">
+      <div class="wrap">
+        <header class="head reveal">
+          <p class="kicker"><span>§ 01</span> Services</p>
+          <h2>Four desks.<br />One file.</h2>
+          <p class="head__note">Admission, visa, housing and flights — handled by one team that already knows your case.</p>
+        </header>
+
+        <div class="folder reveal">
+          <div class="folder__tabs" role="tablist" aria-label="Services">
+            <button class="folder__tab" role="tab" id="tab-1" aria-controls="panel-1" aria-selected="true"><span>01</span>Admission</button>
+            <button class="folder__tab" role="tab" id="tab-2" aria-controls="panel-2" aria-selected="false" tabindex="-1"><span>02</span>Visa</button>
+            <button class="folder__tab" role="tab" id="tab-3" aria-controls="panel-3" aria-selected="false" tabindex="-1"><span>03</span>Housing</button>
+            <button class="folder__tab" role="tab" id="tab-4" aria-controls="panel-4" aria-selected="false" tabindex="-1"><span>04</span>Flights</button>
+          </div>
+
+          <div class="folder__body">
+            <article class="panel" role="tabpanel" id="panel-1" aria-labelledby="tab-1">
+              <div class="panel__text">
+                <h3>University admission</h3>
+                <p>We guide you from first inquiry to enrollment letter. That includes choosing the right Serbian university, preparing your application form, collecting transcripts and recommendation letters, and submitting everything on time.</p>
+                <p>Our team checks every document before it goes to admissions, so you don't get rejected over missing or incorrect paperwork.</p>
+              </div>
+              <ul class="panel__list">
+                <li>University &amp; program selection</li>
+                <li>Application form preparation</li>
+                <li>Transcripts &amp; recommendation letters</li>
+                <li>Document review before submission</li>
+                <li>Enrollment letter</li>
+              </ul>
+            </article>
+
+            <article class="panel" role="tabpanel" id="panel-2" aria-labelledby="tab-2" hidden>
+              <div class="panel__text">
+                <h3>Visa processing</h3>
+                <p>Once you are admitted, we handle the student visa process: we compile the embassy requirements, review your financial and academic documents, and prepare you for your appointment.</p>
+                <p>We stay in touch until approval, so you know exactly when you can travel to Serbia.</p>
+              </div>
+              <ul class="panel__list">
+                <li>Embassy requirement checklist</li>
+                <li>Financial document review</li>
+                <li>Academic document review</li>
+                <li>Appointment preparation</li>
+                <li>Follow-up to approval</li>
+              </ul>
+            </article>
+
+            <article class="panel" role="tabpanel" id="panel-3" aria-labelledby="tab-3" hidden>
+              <div class="panel__text">
+                <h3>Accommodation</h3>
+                <p>We arrange student housing or a dormitory place close to your campus in Belgrade or another university city, matched to your budget, program length and preferred living setup.</p>
+                <p>You arrive with a confirmed place to stay instead of searching on your own after landing.</p>
+              </div>
+              <ul class="panel__list">
+                <li>Dormitory placement</li>
+                <li>Private student housing</li>
+                <li>Close to your campus</li>
+                <li>Matched to your budget</li>
+                <li>Confirmed before you fly</li>
+              </ul>
+            </article>
+
+            <article class="panel" role="tabpanel" id="panel-4" aria-labelledby="tab-4" hidden>
+              <div class="panel__text">
+                <h3>Flight tickets</h3>
+                <p>We book your return flights to Serbia with dates aligned to your program start and visa approval, and we coordinate layovers, baggage allowances and any schedule changes if your intake date shifts.</p>
+                <p>That's one less thing to organise before you start your studies abroad.</p>
+              </div>
+              <ul class="panel__list">
+                <li>Return flights to Serbia</li>
+                <li>Dates aligned to your visa</li>
+                <li>Layovers &amp; baggage</li>
+                <li>Rebooking if your intake shifts</li>
+              </ul>
+            </article>
+          </div>
         </div>
       </div>
-      <div class="scene-bridge scene-bridge--bottom" style="--bridge-color: #fff"></div>
     </section>
 
-    <!-- Scene 4: Admission Checklist -->
-    <section class="scene checklist section" id="checklist" data-scene="checklist">
-      <div class="scene-bridge scene-bridge--top" style="--bridge-color: #fff"></div>
-      <div class="container checklist-wrap">
-        <div class="checklist-intro reveal checklist-intro--center">
-          <span class="section-tag">Admission checklist</span>
-          <h2>Every step of your application</h2>
-          <p>We manage the full admission pipeline for Serbian universities. Here is the process we guide you through — from your first form to the final decision.</p>
-        </div>
-        <ol class="checklist-items reveal-stagger">
-          <li class="checklist-item reveal" style="--i: 0">
-            <div class="checklist-item__body">
-              <span class="checklist-item__step">1.</span>
-              <div>
-                <h3>Application form submission</h3>
-                <p>We help you complete and submit your university application with accurate personal and academic details.</p>
-              </div>
+    <!-- ───────── Process: stamp by stamp ───────── -->
+    <section class="section process" id="process">
+      <div class="wrap process__grid">
+        <aside class="process__aside">
+          <div class="process__sticky">
+            <p class="kicker kicker--light"><span>§ 02</span> Admission checklist</p>
+            <h2>Your file,<br />stamp by stamp.</h2>
+            <p class="process__note">We manage the full admission pipeline for Serbian universities. These are the five steps between your first form and your decision letter.</p>
+            <div class="process__meter" aria-hidden="true">
+              <span class="process__count"><b data-step-count>01</b> / 05</span>
+              <span class="process__bar"><span data-step-bar></span></span>
             </div>
-            <div class="checklist-item__icon" aria-hidden="true">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
+            <div class="stamp stamp--big" data-final-stamp aria-hidden="true">
+              <span>K.JIBSON</span>
+              <strong>Admitted</strong>
+              <span>Serbia · 26/27</span>
             </div>
+          </div>
+        </aside>
+
+        <ol class="steps">
+          <li class="step" data-step="1">
+            <span class="step__num">01</span>
+            <div class="step__body">
+              <h3>Application form submission</h3>
+              <p>We help you complete and submit your university application with accurate personal and academic details.</p>
+            </div>
+            <span class="stamp stamp--small" aria-hidden="true">Filed</span>
           </li>
-          <li class="checklist-item reveal" style="--i: 1">
-            <div class="checklist-item__body">
-              <span class="checklist-item__step">2.</span>
-              <div>
-                <h3>Transcript upload</h3>
-                <p>Official transcripts are collected, verified, and uploaded in the format each university requires.</p>
-              </div>
+          <li class="step" data-step="2">
+            <span class="step__num">02</span>
+            <div class="step__body">
+              <h3>Transcript upload</h3>
+              <p>Official transcripts are collected, verified, and uploaded in the format each university requires.</p>
             </div>
-            <div class="checklist-item__icon" aria-hidden="true">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 19V5M5 12l7-7 7 7"/><path d="M5 19h14"/></svg>
-            </div>
+            <span class="stamp stamp--small" aria-hidden="true">Verified</span>
           </li>
-          <li class="checklist-item reveal" style="--i: 2">
-            <div class="checklist-item__body">
-              <span class="checklist-item__step">3.</span>
-              <div>
-                <h3>Recommendation letter submission</h3>
-                <p>We coordinate with your referees and ensure recommendation letters reach the admissions office on time.</p>
-              </div>
+          <li class="step" data-step="3">
+            <span class="step__num">03</span>
+            <div class="step__body">
+              <h3>Recommendation letters</h3>
+              <p>We coordinate with your referees and make sure recommendation letters reach the admissions office on time.</p>
             </div>
-            <div class="checklist-item__icon" aria-hidden="true">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 7l-10 7L2 7"/></svg>
-            </div>
+            <span class="stamp stamp--small" aria-hidden="true">Received</span>
           </li>
-          <li class="checklist-item reveal" style="--i: 3">
-            <div class="checklist-item__body">
-              <span class="checklist-item__step">4.</span>
-              <div>
-                <h3>Application fee payment</h3>
-                <p>Application fees are processed correctly and receipts are filed as proof of payment for your file.</p>
-              </div>
+          <li class="step" data-step="4">
+            <span class="step__num">04</span>
+            <div class="step__body">
+              <h3>Application fee payment</h3>
+              <p>Application fees are processed correctly and receipts are filed as proof of payment.</p>
             </div>
-            <div class="checklist-item__icon" aria-hidden="true">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg>
-            </div>
+            <span class="stamp stamp--small" aria-hidden="true">Paid</span>
           </li>
-          <li class="checklist-item reveal" style="--i: 4">
-            <div class="checklist-item__body">
-              <span class="checklist-item__step">5.</span>
-              <div>
-                <h3>Admission decision notification</h3>
-                <p>Once a decision is issued, we notify you immediately and begin visa processing for your study permit.</p>
-              </div>
+          <li class="step" data-step="5">
+            <span class="step__num">05</span>
+            <div class="step__body">
+              <h3>Admission decision</h3>
+              <p>Once a decision is issued, we notify you immediately and start visa processing for your study permit.</p>
             </div>
-            <div class="checklist-item__icon" aria-hidden="true">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8A6 6 0 1 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>
-            </div>
+            <span class="stamp stamp--small" aria-hidden="true">Decided</span>
+          </li>
+          <li class="steps__cta">
+            <a href="#contact" class="btn btn--paper">Request our quotation <span aria-hidden="true">→</span></a>
           </li>
         </ol>
-        <div class="checklist-actions reveal">
-          <a href="assets/serbia-quotation.pdf" class="btn btn-primary" download>
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-            Download our quotation
-          </a>
+      </div>
+    </section>
+
+    <!-- ───────── Stories ───────── -->
+    <section class="section stories" id="stories">
+      <div class="wrap">
+        <header class="head head--row reveal">
+          <div>
+            <p class="kicker"><span>§ 03</span> Success stories</p>
+            <h2>They made it.<br />Hear it from them.</h2>
+          </div>
+          <a href="https://www.instagram.com/k.jibson_/" class="btn btn--line" target="_blank" rel="noopener noreferrer">More on Instagram <span aria-hidden="true">↗</span></a>
+        </header>
+
+        <div class="reels">
+          <article class="reel reveal" style="--d:0">
+            <div class="reel__media">
+              <video controls playsinline preload="metadata" src="assets/videos/story-1.mp4"></video>
+              <span class="reel__tag">Reel 01</span>
+            </div>
+            <blockquote>“K.JIBSON handled my entire admission. I received my letter within weeks.”</blockquote>
+            <p class="reel__who">Student · Admission</p>
+          </article>
+          <article class="reel reveal" style="--d:1">
+            <div class="reel__media">
+              <video controls playsinline preload="metadata" src="assets/videos/story-2.mp4"></video>
+              <span class="reel__tag">Reel 02</span>
+            </div>
+            <blockquote>“The visa process was smooth. They knew exactly what documents I needed.”</blockquote>
+            <p class="reel__who">Student · Visa</p>
+          </article>
+          <article class="reel reveal" style="--d:2">
+            <div class="reel__media">
+              <video controls playsinline preload="metadata" src="assets/videos/story-3.mp4"></video>
+              <span class="reel__tag">Reel 03</span>
+            </div>
+            <blockquote>“From application to accommodation, everything was taken care of.”</blockquote>
+            <p class="reel__who">Student · Full service</p>
+          </article>
+          <article class="reel reveal" style="--d:3">
+            <div class="reel__media">
+              <video controls playsinline preload="metadata" src="assets/videos/story-4.mp4"></video>
+              <span class="reel__tag">Reel 04</span>
+            </div>
+            <blockquote>“I recommend K.JIBSON to anyone applying to study in Serbia.”</blockquote>
+            <p class="reel__who">Student · Serbia</p>
+          </article>
         </div>
       </div>
     </section>
 
-    <!-- Scene 5: Success Stories -->
-    <section class="scene stories section" id="stories" data-scene="stories">
-      <div class="container">
-        <div class="section-header section-header--center reveal">
-          <span class="section-tag">Success stories</span>
-          <h2>Hear from our students</h2>
-          <p>Real experiences from students who completed their admission and visa process with K.JIBSON.</p>
-        </div>
-        <div class="stories-grid reveal-stagger">
-          <article class="story-card reveal" style="--i: 0">
-            <div class="story-video">
-              <video class="story-video__player" controls playsinline preload="metadata" src="assets/videos/story-1.mp4"></video>
-            </div>
-            <div class="story-card__meta">
-              <div class="story-stars" aria-label="5 out of 5 stars">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-              </div>
-              <p class="story-quote">“K.JIBSON handled my entire admission — I received my letter within weeks.”</p>
-              <span class="story-name">Student testimonial · Video 1</span>
-            </div>
-          </article>
-          <article class="story-card reveal" style="--i: 1">
-            <div class="story-video">
-              <video class="story-video__player" controls playsinline preload="metadata" src="assets/videos/story-2.mp4"></video>
-            </div>
-            <div class="story-card__meta">
-              <div class="story-stars" aria-label="5 out of 5 stars">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-              </div>
-              <p class="story-quote">“The visa process was smooth — they knew exactly what documents I needed.”</p>
-              <span class="story-name">Student testimonial · Video 2</span>
-            </div>
-          </article>
-          <article class="story-card reveal" style="--i: 2">
-            <div class="story-video">
-              <video class="story-video__player" controls playsinline preload="metadata" src="assets/videos/story-3.mp4"></video>
-            </div>
-            <div class="story-card__meta">
-              <div class="story-stars" aria-label="5 out of 5 stars">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-              </div>
-              <p class="story-quote">“From application to accommodation, everything was taken care of.”</p>
-              <span class="story-name">Student testimonial · Video 3</span>
-            </div>
-          </article>
-          <article class="story-card reveal" style="--i: 3">
-            <div class="story-video">
-              <video class="story-video__player" controls playsinline preload="metadata" src="assets/videos/story-4.mp4"></video>
-            </div>
-            <div class="story-card__meta">
-              <div class="story-stars" aria-label="5 out of 5 stars">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-              </div>
-              <p class="story-quote">“I recommend K.JIBSON to anyone applying to study in Serbia.”</p>
-              <span class="story-name">Student testimonial · Video 4</span>
-            </div>
-          </article>
-        </div>
-        <div class="stories-actions reveal">
-          <a href="https://www.instagram.com/k.jibson_/" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
-            View more on Instagram
-          </a>
-        </div>
-      </div>
-      <div class="scene-bridge scene-bridge--bottom" style="--bridge-color: #fff"></div>
-    </section>
+    <!-- ───────── Instagram band ───────── -->
+    <a class="ig" href="https://www.instagram.com/k.jibson_/" target="_blank" rel="noopener noreferrer">
+      <span class="wrap ig__inner">
+        <span class="ig__label">Admission updates, visa tips &amp; student stories</span>
+        <span class="ig__handle">@k.jibson_ <span class="ig__arrow" aria-hidden="true">↗</span></span>
+      </span>
+    </a>
 
-    <!-- Scene 6: Instagram -->
-    <section class="scene instagram section" data-scene="instagram">
-      <div class="section-divider">
-        <div class="section-divider__curve" style="--divider-fill: #fff"></div>
-      </div>
-      <div class="container instagram-inner">
-        <div class="instagram-text reveal">
-          <span class="section-tag">Follow along</span>
-          <h2>Admission updates &amp; student stories</h2>
-          <p>Application tips, visa guidance, and success stories from students studying in Serbia.</p>
-          <a href="https://www.instagram.com/k.jibson_/" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
-            @k.jibson_
-          </a>
+    <!-- ───────── Contact: the form ───────── -->
+    <section class="section contact" id="contact">
+      <div class="wrap contact__grid">
+        <div class="contact__intro reveal">
+          <p class="kicker"><span>§ 04</span> Contact</p>
+          <h2>Open your file.</h2>
+          <p>Tell us what you want to study and when you want to start. We'll outline the admission steps, required documents and visa process for Serbia.</p>
+          <ul class="contact__links">
+            <li><span class="label">Email</span><a href="mailto:hello@kjibson.com">hello@kjibson.com</a></li>
+            <li><span class="label">Instagram</span><a href="https://www.instagram.com/k.jibson_/" target="_blank" rel="noopener noreferrer">@k.jibson_</a></li>
+            <li><span class="label">Support</span><span>24/7 case support</span></li>
+          </ul>
         </div>
-        <div class="instagram-grid">
-          <div class="ig-tile reveal" style="--i: 0; --pan-x: -4%; --pan-y: -3%" data-tilt>
-            <div class="ig-tile-inner ig-tile-1"></div>
-          </div>
-          <div class="ig-tile reveal" style="--i: 1; --pan-x: 3%; --pan-y: -5%" data-tilt>
-            <div class="ig-tile-inner ig-tile-2"></div>
-          </div>
-          <div class="ig-tile reveal" style="--i: 2; --pan-x: -2%; --pan-y: 4%" data-tilt>
-            <div class="ig-tile-inner ig-tile-3"></div>
-          </div>
-          <div class="ig-tile reveal" style="--i: 3; --pan-x: 5%; --pan-y: 2%" data-tilt>
-            <div class="ig-tile-inner ig-tile-4"></div>
-          </div>
-        </div>
-      </div>
-      <div class="scene-bridge scene-bridge--bottom" style="--bridge-color: #fff"></div>
-    </section>
 
-    <!-- Scene 7: Contact -->
-    <section class="scene contact section" id="contact" data-scene="contact">
-      <div class="scene-bridge scene-bridge--top" style="--bridge-color: #fff"></div>
-      <div class="container contact-grid">
-        <div class="contact-info reveal">
-          <span class="section-tag">Contact</span>
-          <h2>Start your admission process</h2>
-          <p>Tell us your degree interest and timeline — we will outline the admission steps, required documents, and visa process for Serbia.</p>
-          <div class="contact-links">
-            <a href="https://www.instagram.com/k.jibson_/" target="_blank" rel="noopener noreferrer">Instagram — @k.jibson_</a>
-            <a href="mailto:hello@kjibson.com">hello@kjibson.com</a>
+        <form class="form reveal" action="#" method="post">
+          <header class="form__head">
+            <span>Application inquiry</span>
+            <span>Form KJ-01</span>
+          </header>
+          <div class="form__grid">
+            <label class="field">
+              <span class="field__label"><b>01</b> Full name</span>
+              <input type="text" name="name" required autocomplete="name" placeholder="As on your passport" />
+            </label>
+            <label class="field">
+              <span class="field__label"><b>02</b> Email</span>
+              <input type="email" name="email" required autocomplete="email" placeholder="you@example.com" />
+            </label>
+            <label class="field">
+              <span class="field__label"><b>03</b> Preferred country</span>
+              <input type="text" name="destination" value="Serbia" />
+            </label>
+            <label class="field">
+              <span class="field__label"><b>04</b> Level</span>
+              <select name="level">
+                <option>Bachelor's</option>
+                <option>Master's</option>
+                <option>PhD</option>
+                <option>Not sure yet</option>
+              </select>
+            </label>
+            <label class="field field--wide">
+              <span class="field__label"><b>05</b> Message</span>
+              <textarea name="message" rows="4" placeholder="Program, start date, current education level…"></textarea>
+            </label>
           </div>
-        </div>
-        <form class="contact-form reveal reveal--scale" action="#" method="post" data-tilt>
-          <div class="form-row">
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" required placeholder="Your name" />
-          </div>
-          <div class="form-row">
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" required placeholder="you@example.com" />
-          </div>
-          <div class="form-row">
-            <label for="destination">Preferred country</label>
-            <input type="text" id="destination" name="destination" placeholder="Serbia" />
-          </div>
-          <div class="form-row">
-            <label for="message">Message</label>
-            <textarea id="message" name="message" rows="4" placeholder="Degree program, start date, current education level…"></textarea>
-          </div>
-          <button type="submit" class="btn btn-primary btn-full">Send inquiry</button>
+          <footer class="form__foot">
+            <p class="form__fine">We only use these details to reply to your inquiry.</p>
+            <button type="submit" class="btn btn--blue">Send inquiry <span aria-hidden="true">→</span></button>
+          </footer>
         </form>
       </div>
     </section>
   </main>
 
   <footer class="footer">
-    <div class="container footer-inner">
-      <a href="#hero" class="logo">
-        <img src="assets/logo 2.png" alt="K. Jibson Travels" width="168" height="52" />
-      </a>
-      <p class="footer-copy">© <span id="year"></span> K.JIBSON. All rights reserved.</p>
-      <div class="footer-social">
-        <a href="https://www.instagram.com/k.jibson_/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">Instagram</a>
+    <div class="wrap">
+      <div class="footer__row">
+        <p>© <span id="year">2026</span> K.JIBSON®. All rights reserved.</p>
+        <nav aria-label="Footer">
+          <a href="#services">Services</a>
+          <a href="#process">Process</a>
+          <a href="#stories">Stories</a>
+          <a href="https://www.instagram.com/k.jibson_/" target="_blank" rel="noopener noreferrer">Instagram</a>
+          <a href="#top">Back to top ↑</a>
+        </nav>
       </div>
+      <p class="footer__mark" aria-hidden="true">K.JIBSON</p>
     </div>
   </footer>
 
